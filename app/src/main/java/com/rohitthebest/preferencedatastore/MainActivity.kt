@@ -66,6 +66,14 @@ class MainActivity : AppCompatActivity() {
             binding.nameTV.text = it.name
             binding.ageTV.text = it.age.toString()
             binding.genderSwitch.isChecked = it.isMale
+
+            if(it.isMale) {
+
+                binding.genderTV.text = "Male"
+            }else {
+
+                binding.genderTV.text = "Female"
+            }
         }
     }
 }
